@@ -3,7 +3,7 @@ import NavMainBtn from './NavMainBtn';
 
 function NavMain() {
     return (
-        <div className="navMain">
+        <div className="nav-main">
             <NavMainBtn name="หน้าหลัก" />
             <NavMainBtn name="ข้อมูลของฉัน" />
         </div>

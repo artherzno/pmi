@@ -3,8 +3,8 @@ import IconHome from '../img/home.png';
 
 function NavMainBtn(props) {
     return (
-        <button>
-            <div className="boxImage">
+        <button className="btn-main">
+            <div className="btn-image">
                 <img src={IconHome} alt="icon" />
             </div>
             <p>{ props.name }</p> 
