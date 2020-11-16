@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import './App.scss'
+import './App.scss';
+import Header from './components/Header';
 
 function App() {
   return (
     <div>
-      Test
+      <Header />
     </div>
   )
 }
 
-export default App
+export default App;
