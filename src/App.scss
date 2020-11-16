@@ -1,5 +1,16 @@
-$red: #f00;
+$fill-blue: #2B6FB6;
+$fill-blue-font: #017AFF;
+$gradient-bluesky-top: #007DFE;
+$gradient-bluesky-bottom: #00A3FE;
+$fill-grey-font: #80879A;
+$gradient-grey-top: #646567;
+$gradient-grey-bottom: #797A7C;
+$fill-black: #000;
+$fill-white: #fff;
+
+
 
 body {
-    background-color: $red;
+    background-color: $fill-white;
+    color: $fill-grey-font;
 }
