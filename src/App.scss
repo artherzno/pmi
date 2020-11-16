@@ -8,14 +8,62 @@ $gradient-grey-bottom: #797A7C;
 $fill-black: #000;
 $fill-white: #fff;
 
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
 
+.font-blue {
+    color: $fill-blue-font;
+}
+
+.font-black {
+    color: $fill-black;
+}
+
+.font-bold {
+    font-weight: bold;
+}
 
 body {
     background-color: $fill-white;
     color: $fill-grey-font;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .header {
     text-align: center;
+    padding: 10px 0;
+    width: 100vw;
+}
+
+.navMain {
+    background-color: $fill-blue-font;
+    padding: 20px 40px;
+    text-align: center;
+
+    button {
+        border: none;
+        margin: 0 20px;
+        background-color: transparent;
+
+        .boxImage {
+            background-color: $fill-white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 20px;
+            box-shadow: 4px 4px 4px $fill-black;
+            
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            p {
+                
+            }
+        }
+    }
 }
