@@ -18,7 +18,7 @@ export default function BasicExample() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/showparam">ShowParam</Link>
+            <Link to="/showparam/test">ShowParam</Link>
           </li>
           <li>
             <Link to="/countpage">CountPage</Link>
@@ -41,7 +41,7 @@ export default function BasicExample() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/showparam">
+          <Route path="/showparam/:data">
             <ShowParam />
           </Route>
           <Route path="/countpage">
