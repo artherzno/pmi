@@ -5,8 +5,8 @@ import BtnSquare from './BtnSquare';
 function MainPointAction() {
     return (
         <div className="main-point-action">
-            <BtnSquare name="ซื้อเหรียญเพิ่ม" />
-            <BtnSquare name="แลกส่วนลด" />
+            <BtnSquare name="ซื้อเหรียญเพิ่ม" icon="noimage" />
+            <BtnSquare name="แลกส่วนลด" icon="home" />
         </div>
     )
 }

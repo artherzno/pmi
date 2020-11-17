@@ -1,12 +1,15 @@
 import React from 'react';
 
+import NoImage from '../img/noimage.png';
+
 function BtnSquare(props) {
+
     return (
         <button className="btn-square">
             <div className="btn-image">
-                <img alt="icon" />
+                <img src={NoImage} alt="icon" />
             </div>
-            <p>{ props.name }</p> 
+            <p className="font-grey">{ props.name }</p> 
         </button>
     )
 }
