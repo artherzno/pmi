@@ -3,7 +3,8 @@ import React from 'react';
 function MainTransaction() {
     return (
         <div className="main-transaction">
-            Main Transaction
+            <h3>ประวัติรายการ</h3>
+            
         </div>
     )
 }
