@@ -4,7 +4,7 @@ import MainPointStatus from './MainPointStatus';
 import MainPointAction from './MainPointAction';
 import MainTransaction from './MainTransaction';
 
-function Main() {
+function Main(props) {
     const [dataTransaction, setDataTransaction] = useState([]);
 
     return (
@@ -13,7 +13,7 @@ function Main() {
                 <MainPointStatus />
             </div>
             <MainPointAction />
-            <MainTransaction />
+            <MainTransaction data={props.data} />
         </React.Fragment>
     )
 }

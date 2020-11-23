@@ -40,7 +40,7 @@ function App() {
       <div>
         <Header />
         <NavMain />
-        <Container />
+        <Container data={dataTransaction} />
         <Footer />
       </div>
     );

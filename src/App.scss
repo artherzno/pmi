@@ -18,6 +18,7 @@ button {
     border: none;
     margin: 0 20px;
     background-color: transparent;
+    font-family: 'Prompt', sans-serif;
 
     &:focus {
         outline: none !important;
@@ -67,6 +68,7 @@ body {
     background-color: $fill-white;
     color: $fill-grey-font;
     font-size: 0.8rem;
+    font-family: 'Prompt', sans-serif;
 }
 
 .header {
@@ -76,7 +78,7 @@ body {
 }
 
 .footer {
-    position: fixed;
+    // position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -189,7 +191,7 @@ body {
         flex-direction: row;
         display: flex;
         padding: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         border-radius: 15px;
         box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
 
@@ -212,8 +214,12 @@ body {
                     &:last-child {
                         text-align: right;
                     }
+                }
+            }
 
-                    &.font-blue {
+            ._status {
+                span {
+                    &:last-child {
                         font-size: 16px;
                     }
                 }

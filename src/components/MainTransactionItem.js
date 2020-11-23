@@ -2,18 +2,33 @@ import React from 'react';
 
 import NoImage from '../img/noimage.png';
 
-function MainTransactionItem() {
+
+function MainTransactionItem(props) {
+
+    const amount = props.data.amount;
+    const amount_status = props.data.amount_status;
+
+    function checkAmountStatus() {
+        if(amount_status=='addcoin') {
+            return <span className="font-blue">{amount}</span>
+        } else if(amount_status=='discount') {
+            return <span className="font-black">{amount}</span>
+        } else {
+            return <span className="font-red">{amount}</span>
+        }
+    }
+
     return (
         <div className="main-transaction-item">
             <img src={NoImage} alt="icon" />
             <div className="_detail">
                 <div className="_status">
-                    <span className="font-black"><b>ซื้อเหรียญเพิ่ม</b></span>
-                    <span className="font-blue"><b>+400</b></span>
+                    <span className="font-black"><b>{props.data.status}</b></span>
+                    { checkAmountStatus() }
                 </div>
                 <div className="_idtimestmp">
-                    <span>95739583134</span>
-                    <span>12 ต.ค. 2563 15:20</span>
+                    <span>{props.data.transaction_id}</span>
+                    <span>{props.data.timestamp}</span>
                 </div>
             </div>
         </div>

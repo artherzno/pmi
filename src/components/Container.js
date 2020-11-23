@@ -2,10 +2,10 @@ import React from 'react';
 
 import Main from './Main';
 
-function Container() {
+function Container(props) {
     return (
         <div className="container">
-            <Main />
+            <Main data={props.data} />
         </div>
     )
 }
