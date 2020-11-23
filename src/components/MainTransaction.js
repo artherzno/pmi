@@ -4,7 +4,7 @@ import MainTransactionItem from './MainTransactionItem';
 function MainTransaction() {
     return (
         <div className="main-transaction">
-            <h3>ประวัติรายการ</h3>
+            <h3 className="main-transaction-title">ประวัติรายการ</h3>
             <MainTransactionItem />
         </div>
     )

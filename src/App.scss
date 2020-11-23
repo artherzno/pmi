@@ -28,7 +28,7 @@ button {
 .btn-square {
     
     .btn-image {
-        border-radius: 20px;
+        border-radius: 15px;
         background-color: $fill-white;
         box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
         width: 40px;
@@ -158,4 +158,55 @@ body {
     margin-top: -30px;
     padding-bottom: 30px;
     text-align: center;
+}
+
+.main-transaction {
+    padding: 20px;
+
+    .main-transaction-title {
+        color: $fill-black;
+        margin-bottom: 15px;
+    }
+
+    .main-transaction-item {
+        flex-direction: row;
+        display: flex;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+
+        img {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            flex: 0;
+        }
+
+        ._detail {
+            flex: 1;
+            margin-left: 10px;
+
+            ._status, ._idtimestmp {
+                span {
+                    display: inline-block;
+                    width: 50%;
+
+                    &:last-child {
+                        text-align: right;
+                    }
+
+                    &.font-blue {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            ._idtimestmp {
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+    
+    }
 }
