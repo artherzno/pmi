@@ -23,7 +23,7 @@ function MainTransactionItem(props) {
             <img src={NoImage} alt="icon" />
             <div className="_detail">
                 <div className="_status">
-                    <span className="font-black"><b>{props.data.status}</b></span>
+                    <span className="font-black"><b>{props.data.transaction_status}</b></span>
                     { checkAmountStatus() }
                 </div>
                 <div className="_idtimestmp">
