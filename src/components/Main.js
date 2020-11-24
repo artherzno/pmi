@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import MainPointStatus from './MainPointStatus';
 import MainPointAction from './MainPointAction';
+import MainAttention from './MainAttention';
 import MainTransaction from './MainTransaction';
 
 function Main(props) {
@@ -13,6 +14,7 @@ function Main(props) {
                 <MainPointStatus />
             </div>
             <MainPointAction />
+            <MainAttention />
             <MainTransaction data={props.data} />
         </React.Fragment>
     )
