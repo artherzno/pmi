@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-import MainPointStatus from './MainPointStatus';
-import MainPointAction from './MainPointAction';
-import MainAttention from './MainAttention';
-import MainTransaction from './MainTransaction';
+import MainPointStatus from '../components/MainPointStatus';
+import MainPointAction from '../components//MainPointAction';
+import MainAttention from '../components//MainAttention';
+import MainTransaction from '../components//MainTransaction';
 
 function Main(props) {
     const [dataTransaction, setDataTransaction] = useState([]);

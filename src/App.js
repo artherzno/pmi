@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 import Header from './components/Header';
 import NavMain from './components/NavMain';
-import Container from './components/Container';
+import Container from './pages/Container';
 import Footer from './components/Footer';
 import DataTransaction from './data-transaction.json';
 
@@ -11,8 +11,6 @@ function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [dataTransaction, setDataTransaction] = useState([]);
-
-  console.log(DataTransaction);
 
   useEffect(()=>{
     setDataTransaction(DataTransaction);
