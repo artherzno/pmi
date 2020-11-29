@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import MainPointStatus from '../components/MainPointStatus';
-import MainPointAction from '../components//MainPointAction';
+import MainStatus from '../components/MainStatus';
+import MainAction from '../components//MainAction';
 import MainAttention from '../components//MainAttention';
 import MainTransaction from '../components//MainTransaction';
 
@@ -11,9 +11,10 @@ function Main(props) {
     return (
         <React.Fragment>
             <div className="container-top">
-                <MainPointStatus />
+                <h3>สะสมเหรียญ</h3>
+                <MainStatus />
             </div>
-            <MainPointAction />
+            <MainAction />
             <MainAttention />
             <MainTransaction data={props.data} />
         </React.Fragment>

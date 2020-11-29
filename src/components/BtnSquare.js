@@ -9,7 +9,7 @@ function BtnSquare(props) {
             <div className="btn-image">
                 <img src={NoImage} alt="icon" />
             </div>
-            <p className="font-grey">{ props.name }</p> 
+            <p className="font-black">{ props.name }</p> 
         </button>
     )
 }

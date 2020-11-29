@@ -2,7 +2,7 @@ import React from 'react';
 
 import BtnSquare from './BtnSquare';
 
-function MainPointAction() {
+function MainAction() {
     return (
         <div className="main-point-action">
             <BtnSquare name="ซื้อเหรียญเพิ่ม" icon="noimage" />
@@ -11,4 +11,4 @@ function MainPointAction() {
     )
 }
 
-export default MainPointAction;
+export default MainAction;

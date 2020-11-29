@@ -2,10 +2,9 @@ import React from 'react';
 
 import NoImage from '../img/noimage.png';
 
-function MainPointStatus() {
+function MainStatus() {
     return (
         <div className="main-point-status">
-            <h3>สะสมเหรียญ</h3>
             <div className="main-point-box">
                 <div className="_left">
                     <img src={NoImage} alt="icon" />
@@ -26,4 +25,4 @@ function MainPointStatus() {
     )
 }
 
-export default MainPointStatus;
+export default MainStatus;
