@@ -31,7 +31,7 @@ function MainAttention() {
 
     return (
         <div className="main-attention">
-            {attention.map((item)=> <p><span className="font-black">{item.title}</span> <span className="font-gray">{item.detail}</span></p>)}
+            {attention.map((item,i)=> <p key={i}><span className="font-black">{item.title}</span> <span className="font-gray">{item.detail}</span></p>)}
         </div>
     )
 }
