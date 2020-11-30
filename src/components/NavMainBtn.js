@@ -1,11 +1,12 @@
 import React from 'react';
-import IconHome from '../img/home.png';
+import IconHome from '../assets/img/home.png';
+import IconUser from '../assets/img/user.png';
 
 function NavMainBtn(props) {
     return (
         <button className="btn-main">
             <div className="btn-image">
-                <img src={IconHome} alt="icon" />
+                { props.icon === 'home' ? <img src={IconHome} alt="icon" /> : <img src={IconUser} alt="icon" /> }
             </div>
             <p>{ props.name }</p> 
         </button>

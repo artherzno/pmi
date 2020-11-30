@@ -1,0 +1,21 @@
+<svg id="Group_566" data-name="Group 566" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.816" height="40.816" viewBox="0 0 40.816 40.816">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fd5900"/>
+      <stop offset="1" stop-color="#ffde00"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffedad"/>
+      <stop offset="1" stop-color="#ffffe5"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_10" data-name="Ellipse 10" cx="20.408" cy="20.408" r="20.408" fill="rgba(253,153,0,0.1)"/>
+  <g id="Coin" transform="translate(6.572 6.419)">
+    <g id="Group_534" data-name="Group 534" transform="translate(0 0)">
+      <path id="Path_123" data-name="Path 123" d="M104.789,209.7a13.8,13.8,0,0,1-6.374-26.031,14.206,14.206,0,0,1,10.309-1,19.268,19.268,0,0,1,2.419.985,13.8,13.8,0,0,1-6.354,26.042Z" transform="translate(-91 -182.137)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_535" data-name="Group 535" transform="translate(6.066 5.568)">
+      <path id="Path_124" data-name="Path 124" d="M167.49,257.4l-3.511-1.894-3.551,1.818a1.162,1.162,0,0,1-1.674-1.243l.716-3.924-2.826-2.814a1.163,1.163,0,0,1,.665-1.977l3.954-.531,1.8-3.557a1.183,1.183,0,0,1,1.049-.637,1.161,1.161,0,0,1,1.036.66l1.727,3.595,3.941.615a1.163,1.163,0,0,1,.623,1.991l-2.886,2.753.632,3.939a1.162,1.162,0,0,1-1.7,1.207Z" transform="translate(-156.302 -242.644)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

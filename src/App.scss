@@ -1,3 +1,42 @@
+@font-face {
+    font-family: 'db_heaventbold';
+    src: url('./assets/fonts/db_heavent_bd_v3.2-webfont.eot');
+    src: url('./assets/fonts/db_heavent_bd_v3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/db_heavent_bd_v3.2-webfont.woff2') format('woff2'),
+         url('./assets/fonts/db_heavent_bd_v3.2-webfont.woff') format('woff'),
+         url('./assets/fonts/db_heavent_bd_v3.2-webfont.ttf') format('truetype'),
+         url('./assets/fonts/db_heavent_bd_v3.2-webfont.svg#db_heaventbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'db_heaventmed';
+    src: url('./assets/fonts/db_heavent_med_v3.2-webfont.eot');
+    src: url('./assets/fonts/db_heavent_med_v3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/db_heavent_med_v3.2-webfont.woff2') format('woff2'),
+         url('./assets/fonts/db_heavent_med_v3.2-webfont.woff') format('woff'),
+         url('./assets/fonts/db_heavent_med_v3.2-webfont.ttf') format('truetype'),
+         url('./assets/fonts/db_heavent_med_v3.2-webfont.svg#db_heaventmed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'db_heaventthin';
+    src: url('./assets/fonts/db_heavent_thin_v3.2-webfont.eot');
+    src: url('./assets/fonts/db_heavent_thin_v3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/db_heavent_thin_v3.2-webfont.woff2') format('woff2'),
+         url('./assets/fonts/db_heavent_thin_v3.2-webfont.woff') format('woff'),
+         url('./assets/fonts/db_heavent_thin_v3.2-webfont.ttf') format('truetype'),
+         url('./assets/fonts/db_heavent_thin_v3.2-webfont.svg#db_heaventthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 $fill-blue: #2B6FB6;
 $fill-blue-font: #017AFF;
 $gradient-bluesky-top: #007DFE;
@@ -8,23 +47,56 @@ $gradient-grey-bottom: #797A7C;
 $fill-black: #000;
 $fill-white: #fff;
 
-$shadow: 3px 3px 10px rgba(0,0,0,0.1);
+$shadow: 3px 3px 10px rgba(0,0,0,0.08);
 
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+    font-family: 'db_heaventmed';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 0.6;
 }
 
 button {
     border: none;
     margin: 0 20px;
     background-color: transparent;
-    font-family: 'Prompt', sans-serif;
 
     &:focus {
         outline: none !important;
         outline-offset: none !important;
+    }
+}
+
+.btn-ellipse {
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: 120px;
+    margin: 0;
+
+    &._grey {
+        margin-right: 5px;
+        background: rgb(99,100,102);
+        background: -moz-linear-gradient(180deg, rgba(99,100,102,1) 0%, rgba(122,123,123,1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(99,100,102,1) 0%, rgba(122,123,123,1) 100%);
+        background: linear-gradient(180deg, rgba(99,100,102,1) 0%, rgba(122,123,123,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#666769",endColorstr="#7a7b7c",GradientType=1);
+    }
+
+    &._blue {
+        margin-left: 5px;
+        background: rgb(0,125,254);
+        background: -moz-linear-gradient(180deg, rgba(0,125,254,1) 0%, rgba(0,163,254,1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(0,125,254,1) 0%, rgba(0,163,254,1) 100%);
+        background: linear-gradient(180deg, rgba(0,125,254,1) 0%, rgba(0,163,254,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007dfe",endColorstr="#00a3fe",GradientType=1);
     }
 }
 
@@ -34,18 +106,20 @@ button {
         border-radius: 15px;
         background-color: $fill-white;
         box-shadow: $shadow;
-        width: 40px;
-        height: 40px;
-        padding: 20px;
+        width: 84px;
+        height: 84px;
+        padding: 24px;
+        margin: auto;
 
         img {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
         }
     }
 
     p {
         margin-top: 10px;
+        font-size: 1.5rem;
     }
 }
 
@@ -61,6 +135,10 @@ button {
     color: $fill-grey-font;
 }
 
+.font-white {
+    color: $fill-white;
+}
+
 .font-bold {
     font-weight: bold;
 }
@@ -69,14 +147,25 @@ button {
 body {
     background-color: $fill-white;
     color: $fill-grey-font;
-    font-size: 0.8rem;
-    font-family: 'Prompt', sans-serif;
+    font-size: 1.4rem;
+    font-family: 'db_heaventmed', sans-serif;
 }
 
 .header {
     text-align: center;
     padding: 10px 0;
     width: 100vw;
+    position: relative;
+
+    img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
 }
 
 .footer {
@@ -89,7 +178,7 @@ body {
 
     p, a {
         color: $fill-white;
-        font-size: 10px;
+        font-size: 1rem;
     }
 }
 
@@ -102,8 +191,8 @@ body {
 
         .btn-image {
             background-color: $fill-white;
-            width: 40px;
-            height: 40px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             padding: 20px;
             box-shadow: $shadow;
@@ -117,6 +206,7 @@ body {
 
         p {
             color: $fill-blue-font;
+            font-size: 1.4rem;
         }
     }
 }
@@ -135,16 +225,20 @@ body {
         h3 {
             color: $fill-white;
             margin-bottom: 30px;
+            font-size: 2rem;
         }
     }
 }
 
-.main-point-box {
+.box-style {
     background-color: $fill-white;
     border-radius: 20px;
     margin-bottom: 30px;
-    display: flex;
     box-shadow: $shadow;
+}
+
+.main-box {
+    display: flex;
 
     > div {
         width: 49.5%;
@@ -157,42 +251,39 @@ body {
 
         img {
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            vertical-align: top;
-            margin-top: 5px;
+            width: 36px;
+            height: 36px;
+            margin-right: 15px;
         }
 
-        .main-point-text {
+        .main-text {
             display: inline-block;
             text-align: left;
 
             p {
-                font-size: 12px;
+                font-size: 1.2rem;
             }
         }
     }
 }
 
-.main-point-action {
+.main-action {
     margin-top: -30px;
     padding-bottom: 30px;
     text-align: center;
 }
 
 .main-attention {
-    margin: 0 20px;
+    margin: 0 20px 24px;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: $shadow;
+    border-radius: 0;
 }
 
 .main-transaction {
     padding: 20px;
 
     .main-transaction-title {
-        color: $fill-black;
+        color: $fill-grey-font;
         margin-bottom: 15px;
     }
 
@@ -204,16 +295,26 @@ body {
         border-radius: 15px;
         box-shadow: $shadow;
 
-        img {
-            width: 30px;
-            height: 30px;
+        ._img {
+            flex: 1;
             display: inline-block;
-            flex: 0;
+            width: 36px;
+            height: 36px;
+
+            img {
+                width: 36px;
+                height: 36px;
+
+                &.ic-scan {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
         }
 
         ._detail {
-            flex: 1;
-            margin-left: 10px;
+            flex: 8;
+            margin-left: 15px;
 
             ._status, ._idtimestmp {
                 span {
@@ -227,19 +328,45 @@ body {
             }
 
             ._status {
+                line-height: 1;
+
                 span {
                     &:last-child {
-                        font-size: 16px;
+                        font-size: 2rem;
+                        line-height: 0.6;
                     }
                 }
             }
 
             ._idtimestmp {
+                line-height: 0.6;
+
                 span {
-                    font-size: 10px;
+                    font-size: 1rem;
+                    line-height: 0.6;
                 }
             }
         }
     
     }
 }
+
+.buycoin-action {
+    margin-top: -60px;
+    padding: 30px 20px;
+    text-align: center;
+
+    .buycoin-action-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .main-box {
+        div {
+            img {
+                margin: 0;
+            }
+        }
+    }
+ }

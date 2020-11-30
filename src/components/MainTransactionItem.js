@@ -1,6 +1,8 @@
 import React from 'react';
 
-import NoImage from '../img/noimage.png';
+import NoImage from '../assets/img/noimage.png';
+import IconStarAdd from '../assets/img/ic-star-add.svg';
+import IconScan from '../assets/img/ic-scan.svg';
 
 
 function MainTransactionItem(props) {
@@ -18,12 +20,24 @@ function MainTransactionItem(props) {
         }
     }
 
+    function checkIcon() {
+        if(amount_status=='addcoin') {
+            return <img src={IconStarAdd} alt="icon" />;
+        } else if(amount_status=='discount') {
+            return <img src={IconScan} className="ic-scan" alt="icon" />;
+        } else {
+            return <img src={NoImage} alt="icon" />;
+        }
+    }
+
     return (
         <div className="main-transaction-item">
-            <img src={NoImage} alt="icon" />
+            <div className="_img">
+                { checkIcon() }
+            </div>
             <div className="_detail">
                 <div className="_status">
-                    <span className="font-black"><b>{props.data.transaction_status}</b></span>
+                    <span className="font-black">{props.data.transaction_status}</span>
                     { checkAmountStatus() }
                 </div>
                 <div className="_idtimestmp">

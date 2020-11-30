@@ -4,8 +4,8 @@ import NavMainBtn from './NavMainBtn';
 function NavMain() {
     return (
         <div className="nav-main">
-            <NavMainBtn name="หน้าหลัก" />
-            <NavMainBtn name="ข้อมูลของฉัน" />
+            <NavMainBtn name="หน้าหลัก" icon="home" />
+            <NavMainBtn name="ข้อมูลของฉัน" icon="user" />
         </div>
     )
 }

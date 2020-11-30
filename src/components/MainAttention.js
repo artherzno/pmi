@@ -30,7 +30,7 @@ function MainAttention() {
     },[]);
 
     return (
-        <div className="main-attention">
+        <div className="main-attention box-style">
             {attention.map((item,i)=> <p key={i}><span className="font-black">{item.title}</span> <span className="font-gray">{item.detail}</span></p>)}
         </div>
     )
