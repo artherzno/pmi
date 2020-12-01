@@ -68,6 +68,7 @@ button {
     border: none;
     margin: 0 20px;
     background-color: transparent;
+    font-size: 1.4rem;
 
     &:focus {
         outline: none !important;
@@ -358,6 +359,22 @@ body {
 
     .buycoin-action-box {
         padding: 20px;
+
+        img {
+            vertical-align: middle;
+        }
+
+        ._header {
+            text-align: left;
+        }
+
+        ._footer {
+            display: flex;
+
+            ._left, ._right {
+                flex: 1;
+            }
+        }
     }
 }
 
